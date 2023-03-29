@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="p5.js a JS client-side library for creating graphic and interactive experiences, based on the core principles of Processing.">
     <title tabindex="1">get started | p5.js</title>
-    <link rel="stylesheet" href="/assets/css/all.css?v=0e8127">
+    <link rel="stylesheet" href="/assets/css/all.css?v=8dd5ca">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
 
@@ -71,14 +71,11 @@
         <li><a href="/zh-Hans/learn/">学习</a></li>
         <li><a href="/zh-Hans/teach/">教学</a></li>
         <li><a href="/zh-Hans/examples/">范例</a></li>
+        <li><a href="https://p5js.org/contributor-docs/#/">贡献</a></li>
         <li><a href="/zh-Hans/books/">书籍</a></li>
         <li><a href="/zh-Hans/community/">社群</a></li>
         <li><a href="https://showcase.p5js.org">案例展示</a></li>
-        <li><a href="https://discourse.processing.org/c/p5js" target=_blank class="other-link">论坛</a></li>
-        <li><a href="http://github.com/processing/p5.js" target=_blank class="other-link">GitHub</a></li>
-        <li><a href="http://twitter.com/p5xjs" target=_blank class="other-link">Twitter</a></li>
-        <li><a href="https://www.instagram.com/p5xjs/" target=_blank class="other-link">Instagram</a></li>
-        <li><a href="https://discord.gg/SHQ8dH25r9" target=_blank class="other-link">Discord</a></li>
+  
       </ul>
     </nav>
   </div>
@@ -97,7 +94,7 @@
       <h2 class="start-element" id="sketch">你的第一个绘图</h2>
 
       <div class="info">
-        <h3 class="sr-only">Code snippet with ellipse</h3>
+        <h3 class="sr-only">带有椭圆形的代码段</h3>
         <p>在 <a href='https://editor.p5js.org/'>p5.js 网页编辑器里</a> 你可以看到如下代码：</p>
 
 <pre id="first-sketch1"><code class="language-javascript">
@@ -116,7 +113,7 @@ function draw() {
         <p>在 <code class="language-javascript">background(220);</code> 之后添加这一行代码： <code class="language-javascript">ellipse(50,50,80,80);</code>.</p>
 
         <p>更新后的代码如下： </p>
-        <h3 class="sr-only">Code snippet with ellipse</h3>
+        <h3 class="sr-only">带有椭圆形的代码段</h3>
 
 <pre id="first-sketch2"><code class="language-javascript">
 function setup() {
@@ -132,21 +129,21 @@ function draw() {
         <div class="edit_space">
           <button id="copy_sketch2" class="copy_button">复制</button>
         </div>
-        <p style="margin-top: 1.5em;">The line you just added draws an ellipse, with its center 50 pixels over from the left and 50 pixels down from the top, with a width and height of 80 pixels.</p>
-        <p>On the editor press play to display your code in action!</p>
-        <h3 class="sr-only">Note for screenreader users</h3>
-        <p>If you are using a screen reader, you must turn on the accessible outputs in the p5 online editor, outside the editor you must add the accessibility library in your html. To learn more visit<a href="../learn/p5-screen-reader.html" target="_blank">using p5 with a screen reader tutorial.</a>
+        <p style="margin-top: 1.5em;">你刚刚添加的这一行代码画了一个椭圆，其中心距左边界50像素，距上边界50像素，宽和高各为80像素。</p>
+        <p>在编辑器中按下“播放”按钮，以查看你的代码运行效果！</p>
+        <h3 class="sr-only">屏幕阅读器用户的注意事项</h3>
+        <p>如果你正在使用屏幕阅读器，你必须在 p5 在线编辑器中打开可访问性输出，如果在编辑器外部编写代码， 则必须在 HTML 中添加可访问性库。如果想要了解更多信息，请访问：<a href="../learn/p5-screen-reader.html" target="_blank">“使用屏幕阅读器使用p5”教程：.</a>
         </p>
-        <p>If you've typed everything correctly, this will appear in the display window:</p>
+        <p>如果你输入的都正确，那么屏幕上会显示：</p>
 
-        <img src="../../assets/img/get-started/first-sketch.png" alt='canvas has a circle of width and height 50 at position 80 x and 80 y'/>
+        <img src="../../assets/img/get-started/first-sketch.png" alt='画布上有一个宽和高都为50像素，位于80 x和80 y位置的圆形'/>
 
-        <p>If nothing appears, the editor may be having trouble understanding what you’ve typed. If this happens, make sure that you've copied the example code exactly: the numbers should be contained within parentheses and have commas between each of them, the line should end with a semicolon, and ellipse has to be spelled correctly.</p>
+        <p>如果没有出现任何内容，可能是编辑器无法理解你所输入的内容。 如果出现这种情况，请确保你已经完全复制了示例代码：数字应该放在括号内， 并在每个数字之间加上逗号，行末应有分号；还要确保ellipse的拼写正确。</p>
 
-        <p>One of the most difficult things about getting started with programming is that you have to be very specific about the syntax. The browser isn't always smart enough to know what you mean, and can be quite fussy about the placement of punctuation. You'll get used to it with a little practice. In the bottom left of the editor you will find the console section. Here, you can find messages from the editor with details about any errors it encounters.</p>
+        <p>编程起步中最困难的事情之一是需要非常准确地使用语法。 浏览器并不总能聪明地知道你的意思，并且可能对标点的位置非常挑剔。 通过一些练习，你会逐渐习惯。编辑器底部左侧是控制台区域， 你可以在这里查看编辑器输出的任何错误信息。</p>
 
-        <h3 class="sr-only">Code snippet with interaction</h3>
-        <p>Next, we'll skip ahead to a sketch that's a little more exciting. Modify the last example to try this:</p>
+        <h3 class="sr-only">带有交互的代码片段</h3>
+        <p>接下来，我们将跳到一个更加有趣的示例。修改上一个示例并尝试：</p>
 
 <pre id="first-sketch3"><code class="language-javascript">
 function setup() {
@@ -165,23 +162,23 @@ function draw() {
         <div class="edit_space">
           <button id="copy_sketch3" class="copy_button">复制</button>
         </div>
-        <p style="margin-top: 1.5em;">This program creates a canvas that is 400 pixels wide and 400 pixels high, and then starts drawing white circles at the position of the mouse. When a mouse button is pressed, the circle color changes to black. Run the code, move the mouse, and click to experience it.
+        <p style="margin-top: 1.5em;">这个程序创建了一个宽400像素，高400像素的画布，并在鼠标位置开始绘制白色圆形。 当按下鼠标按钮时，圆形颜色会变成黑色。 运行代码，移动鼠标，单击以查看效果。
         </p>
 
-        <img src="../../assets/img/get-started/first-sketch2.png" alt='canvas has multiple circles drawn on it following the path of the mouse'/>
+        <img src="../../assets/img/get-started/first-sketch2.png" alt='在画布上，有多个跟随鼠标路径绘制的圆形'/>
       </div>
 
       <h2 class="start-element tutorial-btn" id="next">下一步</h2>
 
       <div class='info'>
         <ul class="list_view">
-          <li>Check out the <a href="../learn/">learn page</a> and <a href="../examples">examples page</a> for more.</li>
+          <li>查看 <a href="../learn/">学习页面</a> 和 <a href="../examples">示例页面</a> 以获取更多信息。</li>
 
-          <li>Watch <a href="https://www.youtube.com/playlist?list=PLRqwX-V7Uu6Zy51Q-x9tMWIv9cueOFTFA">The Coding Train</a> and <a href="https://www.kadenze.com/courses/introduction-to-programming-for-the-visual-arts-with-p5-js/info">Kadenze</a> video tutorials.</li>
+          <li>观看 <a href="https://www.youtube.com/playlist?list=PLRqwX-V7Uu6Zy51Q-x9tMWIv9cueOFTFA">The Coding Train</a> 和 <a href="https://www.kadenze.com/courses/introduction-to-programming-for-the-visual-arts-with-p5-js/info">Kadenze</a> 的视频教程。</li>
 
-          <li>View the <a href="../reference/"> reference</a> for full documentation. </li>
-          <li>If you wish to use p5 with a screenreader, check out the <a href="../learn/p5-screen-reader.html">p5 with a screenreader tutorial</a>.</li>
-          <li>If you have used Processing in the past, read the <a href='https://github.com/processing/p5.js/wiki/Processing-transition'>Processing transition tutorial</a> to learn how to convert from Processing to p5.js, and the main differences between them.</li>
+          <li>查看完整的 <a href="../reference/">参考文档</a>。 </li>
+          <li>如果您希望使用p5和屏幕阅读器，请查看 <a href="../learn/p5-screen-reader.html">p5屏幕阅读器教程</a>.</li>
+          <li>如果您以前使用过Processing，请阅读 <a href='https://github.com/processing/p5.js/wiki/Processing-transition'>Processing过渡教程</a> 了解如何从Processing转换到p5.js，以及它们之间的主要区别。</li>
 
         </ul>
       </div>
@@ -259,7 +256,7 @@ function draw() {
 
         <p>
           点击 sketch.js 档案即会在右边开启该档案，您也能在这时更改该档案。
-          <img src="../../assets/img/get-started/sublime2.png" alt='p5 starter code opened up in sublime editor."'/>
+          <img src="../../assets/img/get-started/sublime2.png" alt='p5 的起始代码已经在 Sublime 编辑器中打开。"'/>
         </p>
 
         <p>
@@ -270,10 +267,10 @@ function draw() {
         </p>
       </div>
 
-      <div>Parts of this tutorial were adapted from the book, Getting Started with p5.js, by Lauren McCarthy, Casey Reas, and Ben Fry, O'Reilly / Make 2015. Copyright © 2015. All rights reserved. Last modified at the p5.js 2019 Contributors Conference.</div>
+      <div>本教程的部分内容改编自Lauren McCarthy、Casey Reas和Ben Fry的书籍《从p5.js开始》， O'Reilly / Make 2015年版权所有。所有权利均已保留。 上一次修改是在 2019 年 p5.js 贡献者会议上。</div>
 
       <script>
-        $.getJSON('../download/version.json', function(data) {
+        $.getJSON('/download/version.json', function(data) {
           $('.p5-replace').each(function() {
             var html = $(this).html().replace('[p5_version]', data.version);
             $(this).html(html);
@@ -284,10 +281,18 @@ function draw() {
 
     
     <footer>
-      <h2 class="sr-only">归功于</h2>
-      <p>
-        p5.js 目前由<a href='http://qianqian-ye.com/' target="_blank">Qianqian Ye</a>领导，原创者为<a href='https://lauren-mccarthy.com' target="_blank">Lauren Lee McCarthy</a>。p5.js 是在<a href="https://processingfoundation.org/" target="_blank">Processing Foundation</a>和<a href="https://itp.nyu.edu/itp/" target="_blank">NYU ITP</a>的支持下由其合作社群所开发。形象及平面设计<a href="https://jereljohnson.com/" target="_blank">Jerel Johnson</a>。<a href="/zh-Hans/copyright.html">&copy; 版权信息</a>。
-      </p>
+        <h2 class="sr-only">归功于</h2>
+        <ul id="footer-menu" aria-labelledby="menu-title">   
+          <li><a href="https://discourse.processing.org/c/p5js" target=_blank class="other-link">论坛</a></li>
+          <li><a href="http://github.com/processing/p5.js" target=_blank class="other-link">GitHub</a></li>
+          <li><a href="http://twitter.com/p5xjs" target=_blank class="other-link">Twitter</a></li>
+          <li><a href="https://www.instagram.com/p5xjs/" target=_blank class="other-link">Instagram</a></li>
+          <li><a href="https://discord.gg/SHQ8dH25r9" target=_blank class="other-link">Discord</a></li>
+        </ul>  
+        
+        <p>
+            p5.js 目前由<a href='http://qianqian-ye.com/' target="_blank">Qianqian Ye</a>领导，原创者为<a href='https://lauren-mccarthy.com' target="_blank">Lauren Lee McCarthy</a>。p5.js 是在<a href="https://processingfoundation.org/" target="_blank">Processing Foundation</a>和<a href="https://itp.nyu.edu/itp/" target="_blank">NYU ITP</a>的支持下由其合作社群所开发。形象及平面设计<a href="https://jereljohnson.com/" target="_blank">Jerel Johnson</a>。<a href="/zh-Hans/copyright.html">&copy; 版权信息</a>。
+        </p>
     </footer>
 
   </div> <!-- end column-span -->
